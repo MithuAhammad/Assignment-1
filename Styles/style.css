@@ -1,265 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Azeret Mono", monospace;
+}
 * {
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.nav-bar {
-  /* margin-left: px;
-    display: flex;
-    justify-content: space-between; */
-}
-.nav-tital {
-  /* Mithu Ahammad*/
-
+.navbar-container ul {
   display: flex;
-
-  position: absolute;
-  width: 328px;
-  height: 33px;
-  left: 120px;
-  top: 30px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 770px;
+  margin: 20px;
+  padding: 20px;
+}
+.navbar-container ul li {
+  list-style: none;
+}
+.navbar-container ul li .heading-name {
+  text-decoration: none;
+  width: 114px;
+  height: 34px;
   color: rgb(13, 19, 33);
-  font-family: Azeret Mono;
   font-size: 28px;
   font-weight: 800;
-  /* line-height: 33px; */
-  /* letter-spacing: 0%; */
-  /* text-align: left; */
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
-.download-btn {
+.navbar-container ul li a .Download-btn {
+  width: 228px;
+  height: 58px;
   box-sizing: border-box;
   border: 1px solid rgb(13, 19, 33);
   border-radius: 8px;
   opacity: 0.8;
+  color: rgb(13, 19, 33);
+  background-color: white;
   font-family: Azeret Mono;
-  /* Frame 2 */
-  position: absolute;
-  width: 244px;
-  height: 57px;
-  left: 950px;
-  top: 38px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10;
-  padding: 17px 24px 17px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
 }
-
-.hero-section {
-  background-image: url("");
-  border: 2px solid;
-  position: absolute;
-  width: 1240px;
+.developer-page-container {
+  width: 100%;
   height: 652px;
-  left: 0;
-  right: 0;
-  top: 131px;
-  bottom: 4462px;
-  margin-left: px;
-}
-/* -----main------ */
-#why-dev {
-  /* Frame 13 */
-  position: absolute;
-  width: 1140px;
-  height: 1393px;
-  left: 100px;
-  right: 0px;
-  top: 857px;
-  bottom: 2995px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10;
-  padding: 80px 97px 80px px;
-
-  border-radius: 16px;
-
-  background: rgba(13, 19, 33, 0.02);
-}
-.why-web {
-  /* padding-top: 200px; */
-}
-.web-titel {
-  /* Why Web Development?? */
-  position: relative;
-  width: 852px;
-  height: 37px;
-  /* Auto layout */
+  background-image: url("../assets/Hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24;
-  padding: 0px;
-  padding-left: 90px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 24px 0px;
+}
+.developer-page-container .developer-img {
+  width: 240.28px;
+  height: 240px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.developer-page-container .developer-text-content h1 {
+  width: 1217px;
+  height: 136px;
+  margin-top: 32px;
   color: rgb(13, 19, 33);
-  font-family: Azeret Mono;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 37px;
+  line-height: 68px;
   letter-spacing: 0%;
   text-align: center;
 }
-.web-p {
-  position: static;
-  width: 852px;
+
+.developer-page-container .developer-text-content p {
+  width: 1280px;
   height: 52px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
+  margin-top: 24px;
+  opacity: 0.7;
+  color: rgb(13, 19, 33);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 24;
-  /* padding: 0px; */
-  padding-left: 120px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 24px 0px;
-  opacity: 0.7;
-  color: rgb(13, 19, 33);
-  font-family: Azeret Mono;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: center;
 }
-.change-world {
-  /* Frame 8 */
-  position: static;
-  width: 946px;
-  height: 336px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 32;
-  padding: 48px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 32px 0px;
-  border-radius: 16px;
-
-  background: linear-gradient(
-    90deg,
-    rgb(255, 255, 255),
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.coding-world {
-  /* I will Do Coding and Change The World */
-  position: static;
-  width: 390px;
-  height: 72px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 16px 0px;
-  color: rgba(13, 19, 33, 0.7);
-  font-family: Azeret Mono;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.coding-world-p {
-  /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. */
-  position: static;
-  width: 468px;
-  height: 52px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 16px 0px;
-  opacity: 0.7;
-  color: rgb(13, 19, 33);
-  font-family: Azeret Mono;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.coding-world-img {
-  /* Group */
-  position: absolute;
-  width: 259.56px;
-  height: 217.01px;
-  left: 0.36%;
-  right: -0.36%;
-  top: 1.74%;
-  bottom: -1.74%;
-}
-
-.coding-world-btn{
-    /* Frame 7 */
-position: static;
-width: 171px;
-height: 47px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10;
-padding: 12px 20px 12px 20px;
-
-
-/* Inside Auto Layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 32px 0px;
-box-sizing: border-box;
-border: 1px solid rgb(13, 19, 33);
-opacity: 0.7;
-
+.developer-page-container .developer-btn {
+    width: 208px;
+    height: 66px;
+    margin-top: 32px;
+    align-items: center;
+    padding: 21px 24px 21px 24px;
+    margin: 32px 0px;
+    border-radius: 8px;
+    background: rgb(13, 19, 33);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
 }
