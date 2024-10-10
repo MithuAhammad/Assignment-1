@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-bar {
+  /* margin-left: px;
+    display: flex;
+    justify-content: space-between; */
+}
+.nav-tital {
+  /* Mithu Ahammad*/
+  
+  display: flex;
+  
+  position: absolute;
+  width: 328px;
+  height: 33px;
+  left: 120px;
+  top: 30px;
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 28px;
+  font-weight: 800;
+  /* line-height: 33px; */
+  /* letter-spacing: 0%; */
+  /* text-align: left; */
+}
+
+.download-btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(13, 19, 33);
+  border-radius: 8px;
+  opacity: 0.8;
+  font-family: Azeret Mono;
+  /* Frame 2 */
+  position: absolute;
+  width: 244px;
+  height: 57px;
+  left: 950px;
+  top: 38px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 17px 24px 17px 24px;
+}
